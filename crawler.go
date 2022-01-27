@@ -47,7 +47,7 @@ func (c crawler) crawl() ([]string, error) {
 	// NOTA IMPORTANTE: os prefixos dos nomes dos arquivos tem que ser igual
 	// ao esperado no parser MPAC.
 
-	// // Contracheque
+	// Contracheque
 	log.Printf("Entrando em Contracheque(%s/%s)...", c.month, c.year)
 	if err := c.navegacaoSite(ctx, "contra"); err != nil {
 		log.Fatalf("Erro no setup:%v", err)
