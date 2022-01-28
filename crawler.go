@@ -93,7 +93,7 @@ func (c crawler) crawl() ([]string, error) {
 }
 
 func (c crawler) downloadFilePath(prefix string) string {
-	return filepath.Join(c.output, fmt.Sprintf("membros-ativos-%s-%s-%s.xlsx", prefix, c.month, c.year))
+	return filepath.Join(c.output, fmt.Sprintf("membros-ativos-%s-%s-%s.ods", prefix, c.month, c.year))
 }
 
 // Navega para as planilhas
